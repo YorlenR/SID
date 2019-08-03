@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Sis_InscripcionesModelStoreContainer" CdmEntityContainer="Sis_InscripcionesEntities">
+    <EntitySetMapping Name="Cursos">
+      <EntityTypeMapping TypeName="Sis_InscripcionesModel.Curso">
+        <MappingFragment StoreEntitySet="Cursos">
+          <ScalarProperty Name="facultad" ColumnName="facultad" />
+          <ScalarProperty Name="estado_curso" ColumnName="estado_curso" />
+          <ScalarProperty Name="profesor" ColumnName="profesor" />
+          <ScalarProperty Name="horario" ColumnName="horario" />
+          <ScalarProperty Name="nombre_curso" ColumnName="nombre_curso" />
+          <ScalarProperty Name="codigo_curso" ColumnName="codigo_curso" />
+          <ScalarProperty Name="id_curso" ColumnName="id_curso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

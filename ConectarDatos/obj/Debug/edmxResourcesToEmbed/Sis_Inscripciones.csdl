@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sis_InscripcionesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Sis_InscripcionesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cursos" EntityType="Sis_InscripcionesModel.Curso" />
+  </EntityContainer>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="id_curso" />
+    </Key>
+    <Property Name="id_curso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo_curso" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nombre_curso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="horario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="profesor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="estado_curso" Type="Int32" Nullable="false" />
+    <Property Name="facultad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
